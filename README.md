@@ -22,7 +22,7 @@ Install the requirements via
 ``` pip install -r requirements.txt ```
 
 ### 2) Downloading the pre-trained models
-The pre-trained models on CIFAR-10 can be dowloaded from "[Score SDE checkpoints]([https://github.com/yang-song/score_sde_pytorch/](https://drive.google.com/drive/folders/1tFmF_uh57O6lx9ggtZT_5LdonVK2cV-e))" provided by Yang Song. 
+The pre-trained models on CIFAR-10 can be dowloaded from "[Score SDE checkpoints](https://drive.google.com/drive/folders/1tFmF_uh57O6lx9ggtZT_5LdonVK2cV-e)" provided by Yang Song. 
 
 Please make sure the checkpoint is saved at the right location `workdir/checkpoints-meta`, where `workdir` is specified in `main.py` file.
 
@@ -39,8 +39,17 @@ The hyper-parameters of FP-Diffusion are specified at `configs/default_cifar10_c
   training.m = 2
 ```
 
+Execute ```main.py``` may start the training. We refer to "Usage" of [(Score SDE) Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch/) for the detailed instruction of `main.py`.
 
-
+```
+main.py:
+  --config: Training configuration.
+    (default: 'None')
+  --eval_folder: The folder name for storing evaluation results
+    (default: 'eval')
+  --mode: <train|eval>: Running mode: train or eval
+  --workdir: Working directory
+```
 
 ## Citation
 
