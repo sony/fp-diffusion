@@ -52,7 +52,11 @@ main.py:
 ```
 
 ## Citation
+If you find this work interesting, please consider citing the paper: 
 
+
+
+## Related works
 
 This work is built upon some previous works which might also interest you:
 
