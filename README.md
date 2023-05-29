@@ -4,7 +4,9 @@ This repository houses the implementation of the paper titled "[FP-Diffusion: Im
 ## TL;DR
 Improving density estimation of diffusion models by regularizing with its underlying PDEs which is termed score Fokker-Planck Equation, theoretically supported! 
 
+<p align="center">
 <img src="ScoreFPE_3Doutline_single.gif">
+</p>
 
 ## Abstract
 
