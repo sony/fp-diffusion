@@ -38,7 +38,7 @@ Please make sure the checkpoint is saved at the right location `workdir/checkpoi
 
 This work is built upon some previous works which might also interest you:
 
-* ICLR 2021,  Score-Based Generative Modeling through Stochastic Differential Equations by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole
+* ICLR 2021,  [Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch/) by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole
 
-* ICML 2022,  Maximum Likelihood Training for Score-Based Diffusion ODEs by High-Order Denoising Score Matching by Cheng Lu, Kaiwen Zheng, Fan Bao, Jianfei Chen, Chongxuan Li and Jun Zhu
+* ICML 2022,  [Maximum Likelihood Training for Score-Based Diffusion ODEs by High-Order Denoising Score Matching](https://github.com/LuChengTHU/mle_score_ode) by Cheng Lu, Kaiwen Zheng, Fan Bao, Jianfei Chen, Chongxuan Li and Jun Zhu
 
