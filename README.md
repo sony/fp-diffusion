@@ -17,18 +17,27 @@ We prove that satisfying the score FPE is desirable as it improves the likelihoo
 
 The FP-Diffusion code is constructed using the remarkable repository "[(Score SDE) Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch/)" as its foundation. 
 
-### Prereqruisites
+### 1) Prereqruisites
 Install the requirements via
-` pip install -r requirements.txt `
+``` pip install -r requirements.txt ```
 
-### Fine-tuning with FP-Diffusion
-
-#### Downloading the pre-trained models
+### 2) Downloading the pre-trained models
 The pre-trained models on CIFAR-10 can be dowloaded from "[Score SDE checkpoints]([https://github.com/yang-song/score_sde_pytorch/](https://drive.google.com/drive/folders/1tFmF_uh57O6lx9ggtZT_5LdonVK2cV-e))" provided by Yang Song. 
 
 Please make sure the checkpoint is saved at the right location `workdir/checkpoints-meta`, where `workdir` is specified in `main.py` file.
 
-#### Starting training
+### 3) Fine-tuning with FP-Diffusion
+
+The hyper-parameters of FP-Diffusion are specified at `configs/default_cifar10_configs.py`. The default setup for CIFAR-10 and ImageNet32 are
+
+```
+  ## Score FPE setups
+  training.scalar_fp = 'both' #choices=['True', 'False', 'both']
+  training.fp_wgt_type = 'll' #choices=['constant', 'convention', 'll']
+  training.alpha = 0.15
+  training.beta = 0.01
+  training.m = 2
+```
 
 
 
