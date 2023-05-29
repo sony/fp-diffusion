@@ -15,11 +15,30 @@ We prove that satisfying the score FPE is desirable as it improves the likelihoo
 
 ## Guidelines for Implementation
 
-The FP-Diffusion code is constructed using the remarkable repository "[Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch/)" as its foundation. 
+The FP-Diffusion code is constructed using the remarkable repository "[(Score SDE) Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch/)" as its foundation. 
 
 ### Prereqruisites
-Installing the requirements via
+Install the requirements via
 ` pip install -r requirements.txt `
+
+### Fine-tuning with FP-Diffusion
+
+#### Downloading the pre-trained models
+The pre-trained models on CIFAR-10 can be dowloaded from "[Score SDE checkpoints]([https://github.com/yang-song/score_sde_pytorch/](https://drive.google.com/drive/folders/1tFmF_uh57O6lx9ggtZT_5LdonVK2cV-e))" provided by Yang Song. 
+
+Please make sure the checkpoint is saved at the right location `workdir/checkpoints-meta`, where `workdir` is specified in `main.py` file.
+
+#### Starting training
+
+
 
 
 ## Citation
+
+
+This work is built upon some previous works which might also interest you:
+
+⋅⋅* ICLR 2021,  Score-Based Generative Modeling through Stochastic Differential Equations by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole
+
+⋅⋅* ICML 2022,  Maximum Likelihood Training for Score-Based Diffusion ODEs by High-Order Denoising Score Matching by Cheng Lu, Kaiwen Zheng, Fan Bao, Jianfei Chen, Chongxuan Li and Jun Zhu
+
