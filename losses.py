@@ -199,7 +199,7 @@ def get_step_fn(sde, train, optimize_fn=None, reduce_mean=False, continuous=True
     loss_fn = get_sde_loss_fn(sde, train, reduce_mean=reduce_mean,
                               continuous=True, likelihood_weighting=likelihood_weighting,
                               scalar_fp='both', fp_dist='pert', fp_wgt_type='ll', 
-                              alpha=0.0, beta=0.001, m=2)
+                              alpha=alpha, beta=beta, m=2)
   else:
     assert not likelihood_weighting, "Likelihood weighting is not supported for original SMLD/DDPM training."
     if isinstance(sde, VESDE):
